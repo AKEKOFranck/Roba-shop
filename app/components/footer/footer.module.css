@@ -1,0 +1,571 @@
+.footer {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 75% 20%,
+      rgba(170, 125, 55, 0.14),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 15% 80%,
+      rgba(130, 90, 35, 0.08),
+      transparent 30%
+    ),
+    #090909;
+
+  color: #ffffff;
+
+  border-top: 1px solid rgba(190, 150, 80, 0.18);
+}
+
+
+/* =========================
+   LUMIÈRE DÉCORATIVE
+========================= */
+
+.glow {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -180px;
+  top: -250px;
+
+  border-radius: 50%;
+
+  background: rgba(190, 145, 65, 0.08);
+
+  filter: blur(100px);
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+.container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1200px, 90%);
+
+  margin: auto;
+
+  padding: 100px 0 80px;
+
+  display: grid;
+
+  grid-template-columns: 1.3fr 0.7fr;
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+
+/* =========================
+   SECTION CONTACT
+========================= */
+
+.contactSection {
+  width: 100%;
+}
+
+
+/* =========================
+   TITRE
+========================= */
+
+.heading {
+  margin-bottom: 40px;
+}
+
+
+.smallTitle {
+  margin: 0 0 14px;
+
+  font-family: var(--font-montserrat);
+
+  font-size: 0.72rem;
+
+  letter-spacing: 0.28em;
+
+  color: #b89455;
+}
+
+
+.heading h2 {
+  margin: 0;
+
+  font-family: var(--font-cormorant);
+
+  font-size: clamp(3rem, 5vw, 5rem);
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -0.02em;
+}
+
+
+.heading h2 span {
+  display: block;
+
+  color: #c7a15d;
+
+  font-style: italic;
+}
+
+
+.description {
+  max-width: 520px;
+
+  margin: 25px 0 0;
+
+  font-family: var(--font-montserrat);
+
+  font-size: 0.85rem;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.58);
+}
+
+
+/* =========================
+   FORMULAIRE
+========================= */
+
+.form {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+
+/* =========================
+   NOM + PRÉNOM
+========================= */
+
+.row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.inputGroup {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+
+.inputGroup label {
+  font-family: var(--font-montserrat);
+
+  font-size: 0.68rem;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.65);
+}
+
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  outline: none;
+
+  border-radius: 2px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  color: #ffffff;
+
+  font-family: var(--font-montserrat);
+
+  font-size: 0.78rem;
+
+  transition:
+    border 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.inputGroup textarea {
+  resize: vertical;
+
+  min-height: 130px;
+}
+
+
+.inputGroup input::placeholder,
+.inputGroup textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* =========================
+   FOCUS
+========================= */
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: rgba(199, 161, 93, 0.65);
+
+  background: rgba(255, 255, 255, 0.05);
+
+  box-shadow:
+    0 0 0 3px rgba(199, 161, 93, 0.05);
+}
+
+
+/* =========================
+   BOUTON
+========================= */
+
+.submit {
+  width: fit-content;
+
+  margin-top: 5px;
+
+  padding: 15px 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  border: 1px solid rgba(199, 161, 93, 0.5);
+
+  background: #b89455;
+
+  color: #0b0b0b;
+
+  cursor: pointer;
+
+  font-family: var(--font-montserrat);
+
+  font-size: 0.7rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.submit svg {
+  font-size: 16px;
+
+  transition: transform 0.3s ease;
+}
+
+
+.submit:hover {
+  background: #d2b274;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 30px rgba(184, 148, 85, 0.16);
+}
+
+
+.submit:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* =========================
+   SECTION LOGO
+========================= */
+
+.brandSection {
+  min-height: 500px;
+
+  padding-left: 60px;
+
+  border-left: 1px solid rgba(199, 161, 93, 0.16);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  width: 180px;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   BAS DU FOOTER
+========================= */
+
+.bottom {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1200px, 90%);
+
+  margin: auto;
+
+  padding: 25px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+.bottom p {
+  margin: 0;
+
+  font-family: var(--font-montserrat);
+
+  font-size: 0.62rem;
+
+  letter-spacing: 0.05em;
+
+  color: rgba(255, 255, 255, 0.35);
+}
+
+
+/* =========================
+   TABLETTE
+========================= */
+
+@media (max-width: 900px) {
+
+  .container {
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+
+    padding: 80px 0;
+  }
+
+
+  .brandSection {
+    min-height: auto;
+
+    padding-left: 0;
+
+    padding-top: 60px;
+
+    padding-bottom: 20px;
+
+    border-left: none;
+
+    border-top: 1px solid rgba(199, 161, 93, 0.16);
+  }
+
+
+  .logoWrapper {
+    width: 210px;
+
+    height: 210px;
+  }
+
+
+  .logo {
+    width: 165px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .container {
+    width: 88%;
+
+    padding: 65px 0;
+  }
+
+
+  .heading {
+    margin-bottom: 32px;
+  }
+
+
+  .smallTitle {
+    font-size: 0.65rem;
+
+    letter-spacing: 0.22em;
+  }
+
+
+  .heading h2 {
+    font-size: 3.2rem;
+  }
+
+
+  .description {
+    margin-top: 22px;
+
+    font-size: 0.76rem;
+
+    line-height: 1.75;
+  }
+
+
+  /* Nom + prénom */
+
+  .row {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+
+  /* Bouton */
+
+  .submit {
+    width: 100%;
+
+    padding: 16px 20px;
+  }
+
+
+  /* Logo */
+
+  .brandSection {
+    padding-top: 50px;
+
+    padding-bottom: 10px;
+  }
+
+
+  .logoWrapper {
+    width: 190px;
+
+    height: 190px;
+  }
+
+
+  .logo {
+    width: 150px;
+  }
+
+
+  /* Bas */
+
+  .bottom {
+    width: 88%;
+
+    padding: 22px 0;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 8px;
+  }
+
+
+  .bottom p {
+    font-size: 0.58rem;
+  }
+
+}
+
+
+/* =========================
+   PETITS TÉLÉPHONES
+========================= */
+
+@media (max-width: 400px) {
+
+  .container {
+    width: 90%;
+
+    padding: 55px 0;
+  }
+
+
+  .heading h2 {
+    font-size: 2.8rem;
+  }
+
+
+  .logoWrapper {
+    width: 165px;
+
+    height: 165px;
+  }
+
+
+  .logo {
+    width: 130px;
+  }
+
+}

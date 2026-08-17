@@ -1,0 +1,374 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(150, 115, 55, 0.12),
+      transparent 35%
+    ),
+    #0b0b0a;
+
+  color: #f5f0e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 100px 6%;
+}
+
+
+/* Légère ambiance lumineuse */
+
+.main::before {
+  content: "";
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: rgba(178, 140, 71, 0.04);
+
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+
+/* Contenu principal */
+
+.about {
+  position: relative;
+  z-index: 2;
+
+  width: min(1200px, 100%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* En-tête */
+
+.header {
+  max-width: 760px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.eyebrow {
+  margin: 0 0 18px;
+
+  font-family: var(--font-montserrat);
+
+  font-size: 0.72rem;
+  font-weight: 500;
+
+  letter-spacing: 0.35em;
+
+  color: #c6a15b;
+}
+
+
+.title {
+  margin: 0;
+
+  font-family: var(--font-cormorant);
+
+  font-size: clamp(3rem, 6vw, 5.8rem);
+
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  letter-spacing: -0.02em;
+}
+
+
+.title span {
+  display: block;
+
+  color: #c6a15b;
+
+  font-style: italic;
+}
+
+
+.intro {
+  max-width: 620px;
+
+  margin: 30px 0 0;
+
+  font-family: var(--font-montserrat);
+
+  font-size: 0.9rem;
+
+  line-height: 1.9;
+
+  font-weight: 300;
+
+  color: rgba(245, 240, 232, 0.68);
+}
+
+
+/* Cartes */
+
+.services {
+  width: 100%;
+
+  margin-top: 75px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid rgba(198, 161, 91, 0.2);
+  border-bottom: 1px solid rgba(198, 161, 91, 0.2);
+}
+
+
+.card {
+  position: relative;
+
+  min-height: 230px;
+
+  padding: 40px 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    background 0.4s ease,
+    transform 0.4s ease;
+}
+
+
+.card:not(:last-child) {
+  border-right: 1px solid rgba(198, 161, 91, 0.15);
+}
+
+
+.card:hover {
+  background: rgba(198, 161, 91, 0.04);
+
+  transform: translateY(-4px);
+}
+
+
+/* Icône */
+
+.icon {
+  width: 64px;
+  height: 64px;
+
+  margin-bottom: 24px;
+
+  border: 1px solid rgba(198, 161, 91, 0.45);
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #c6a15b;
+
+  transition:
+    background 0.4s ease,
+    transform 0.4s ease;
+}
+
+
+.card:hover .icon {
+  background: rgba(198, 161, 91, 0.08);
+
+  transform: scale(1.05);
+}
+
+
+/* Texte des cartes */
+
+.cardContent h2 {
+  margin: 0 0 12px;
+
+  font-family: var(--font-cormorant);
+
+  font-size: 1.55rem;
+
+  font-weight: 500;
+
+  color: #f5f0e8;
+}
+
+
+.cardContent p {
+  max-width: 210px;
+
+  margin: 0;
+
+  font-family: var(--font-montserrat);
+
+  font-size: 0.72rem;
+
+  line-height: 1.8;
+
+  font-weight: 300;
+
+  color: rgba(245, 240, 232, 0.58);
+}
+
+
+/* Bas de page */
+
+.bottom {
+  margin-top: 55px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.bottom p {
+  margin: 0;
+
+  font-family: var(--font-montserrat);
+
+  font-size: 0.72rem;
+
+  letter-spacing: 0.08em;
+
+  color: rgba(245, 240, 232, 0.5);
+}
+
+
+.bottom span {
+  font-family: var(--font-cormorant);
+
+  font-size: 1.5rem;
+
+  font-style: italic;
+
+  color: #c6a15b;
+}
+
+
+/* =========================
+   TABLETTE
+========================= */
+
+@media (max-width: 900px) {
+
+  .main {
+    padding: 90px 5%;
+  }
+
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .card:nth-child(2) {
+    border-right: none;
+  }
+
+
+  .card:nth-child(1),
+  .card:nth-child(2) {
+    border-bottom: 1px solid rgba(198, 161, 91, 0.15);
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .main {
+    min-height: auto;
+
+    padding: 90px 20px;
+  }
+
+
+  .title {
+    font-size: clamp(3rem, 15vw, 4.5rem);
+  }
+
+
+  .intro {
+    font-size: 0.78rem;
+
+    line-height: 1.8;
+
+    margin-top: 25px;
+  }
+
+
+  .services {
+    grid-template-columns: 1fr;
+
+    margin-top: 55px;
+  }
+
+
+  .card {
+    min-height: 210px;
+
+    padding: 35px 25px;
+
+    border-right: none !important;
+
+    border-bottom: 1px solid rgba(198, 161, 91, 0.15);
+  }
+
+
+  .card:last-child {
+    border-bottom: none;
+  }
+
+
+  .icon {
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 20px;
+  }
+
+
+  .cardContent h2 {
+    font-size: 1.45rem;
+  }
+
+
+  .bottom {
+    margin-top: 45px;
+  }
+
+
+  .bottom span {
+    font-size: 1.35rem;
+  }
+}

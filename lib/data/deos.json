@@ -1,0 +1,44 @@
+[
+  {
+    "id": "deo1",
+    "name": "Axe : Provocation, Apollo, Dark Temptation, You, Black (en versions Frais et Dry Protection 48H)",
+    "price": 2500,
+    "image": "/deo/de (1).jpg"
+  },
+  {
+    "id": "deo2",
+    "name": "Matelot Deodorant Body Spray",
+    "price": 2500,
+    "image": "/deo/de (2).jpg"
+  },
+  {
+    "id": "deo3",
+    "name": "Dove : Go Fresh (Pomme & Grenade, Pamplemousse, Concombre, Poire), Mineral Touch, Nourishing Secrets (Matcha & Thé vert, Fleur de lotus, Noix de coco), Invisible Care, Invisible Dry",
+    "price": 2500,
+    "image": "/deo/de (3).jpg"
+  },
+  {
+    "id": "deo4",
+    "name": "Balea :Déodorants & Sprays : Calm Cocos, Sweet Clementine, Sensitive 0%, Soft Flower, Sweet Sunshine, Extra Dry Anti-Transpirant, 5in1 Protection Anti-Transpirant",
+    "price": 2500,
+    "image": "/deo/de (4).jpg"
+  },
+  {
+    "id": "deo5",
+    "name": "Balea Extra Dry Anti-Transpirant",
+    "price": 2500,
+    "image": "/deo/de (5).jpg"
+  },
+  {
+    "id": "deo6",
+    "name": "Balea 5in1 Protection Anti-Transpirant",
+    "price": 2500,
+    "image": "/deo/de (6).jpg"
+  },
+  {
+    "id": "deo7",
+    "name": "Balea : Brumes Parfumées (Sunny Vibes) : Sun Kisses, Happy Vanilla, Pink Flirt, Fruity Boost",
+    "price": 1000,
+    "image": "/deo/de (7).jpg"
+  }
+]
