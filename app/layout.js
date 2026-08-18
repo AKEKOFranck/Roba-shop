@@ -50,7 +50,7 @@ export const metadata = {
     URL principale du site.
     Important : ne pas laisser new URL("").
   */
-  metadataBase: new URL("https://robashop.vercel.app"),
+  metadataBase: new URL("https://roba-shop.vercel.app/"),
 
   /* =========================
      TITRE
@@ -95,7 +95,7 @@ export const metadata = {
   authors: [
     {
       name: "Roba Shop",
-      url: "https://robashop.vercel.app",
+      url: "https://roba-shop.vercel.app/",
     },
   ],
 
@@ -126,7 +126,7 @@ export const metadata = {
 
     locale: "fr_CI",
 
-    url: "https://robashop.vercel.app",
+    url: "https://roba-shop.vercel.app/",
 
     siteName: "Roba Shop",
 

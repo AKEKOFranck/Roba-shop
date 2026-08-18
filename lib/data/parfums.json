@@ -61,61 +61,61 @@
   },
   {
     "id": "par11",
-    "name": "Kiss Me",
+    "name": "Hayaati Royale",
     "price": 12000,
     "image": "/parfum/par (11).jpg"
   },
   {
     "id": "par12",
-    "name": "Terre d'Hermès",
+    "name": "Monark",
     "price": 9000,
     "image": "/parfum/par (12).jpg"
   },
   {
     "id": "par13",
-    "name": "Hayaati Royale",
+    "name": "Matelot",
     "price": 5000,
     "image": "/parfum/par (13).jpg"
   },
   {
     "id": "par14",
-    "name": "Monark",
+    "name": "Terre d'Hermès Parfum",
     "price": 5000,
     "image": "/parfum/par (14).jpg"
   },
   {
     "id": "par15",
-    "name": "Matelot",
+    "name": "Ophylia",
     "price": 9000,
     "image": "/parfum/par (15).jpg"
   },
   {
     "id": "par16",
-    "name": "Terre d'Hermès Parfum",
+    "name": "Terre d'Hermès Parfum Pure Perfume",
     "price": 5000,
     "image": "/parfum/par (16).jpg"
   },
   {
     "id": "par17",
-    "name": "Ophylia",
+    "name": "Kiss Me",
     "price": 500,
     "image": "/parfum/par (17).jpg"
   },
   {
     "id": "par18",
-    "name": "Terre d'Hermès Parfum Pure Perfume",
+    "name": "Terre d'Hermès Eau de toilette",
     "price": 5000,
     "image": "/parfum/par (18).jpg"
   },
   {
     "id": "par19",
-    "name": "Berries Weekend Pink Edition",
+    "name": "Bois D'Argent",
     "price": 10000,
     "image": "/parfum/par (19).jpg"
   },
   {
     "id": "par20",
-    "name": "Bois D'Argent",
+    "name": "Berries Weekend Pink Edition",
     "price": 9000,
     "image": "/parfum/par (20).jpg"
   },
